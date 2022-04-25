@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 8</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<header class="container">
+    <div class="h2 pb-2 bg-primary rounded-bottom fixed-top container text-light text-center">
+        <form action="" id="add-task" class="pt-4">
+            <div class="row">
+                <div class="input-group mb-3">
+                    <label for="task">Create new To Do</label>
+                    <span class="mx-2"> </span>
+                    <input type="text" id="task" name="task" class="form-control" placeholder="Task">
+                    <span class="mx-2"> </span>
+                    <button class="btn btn-warning">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+<div id="tasks-container" class="container" style="margin-top: 100px">
+    <div class="row">
+        <div class="col-4 tasks-col">
+            <h5 class="text-center">To Do</h5>
+        </div>
+        <div class="col-4 tasks-col">
+            <h5 class="text-center">In Progress</h5>
+        </div>
+        <div class="col-4 tasks-col">
+            <h5 class="text-center">Done</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div id="tasks-new" class="col-4 tasks-col"></div>
+        <div id="tasks-open" class="col-4 tasks-col"></div>
+        <div id="tasks-closed" class="col-4 tasks-col"></div>
+
+    </div>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
